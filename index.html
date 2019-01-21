@@ -15,7 +15,13 @@
 
   section.product
   {
-    margin: 1em;
+    margin: 1em 0;
+    padding: 1em;
+  }
+
+  section.product > h2:first-child
+  {
+    margin-top: 0;
   }
 
   dt
@@ -30,6 +36,29 @@
   img
   {
     border: 0;
+  }
+
+  p.intro
+  {
+    font-size: larger;
+  }
+
+  section.product:target
+  {
+    background-color: rgb(236, 234, 231);
+  }
+
+  blink
+  {
+    animation: blinker 1s linear infinite;
+
+    font-weight: bold;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
   }
 
   </style>
@@ -52,15 +81,18 @@
 
   <h1>Amalgamated Conglomerates Consolidated, LLC</h1>
 
+  <p>Web applications and macOS software for film festivals.</p>
+
 </header>
 
 <main>
-  <p>Our compiled products division is pleased to announce the release of our first macOS application, Quick Cinema.</p>
+
+  <p><blink>We are at Art House Convergence 2019!</blink>  Email <a href="mailto:dan@amalgamated.cc">dan@amalgamated.cc</a> or <a href="tel:424-262-5266">(424) AMAL-CON</a> to set up an in-person demo.</p>
 
   <section class="product" id="quick-cinema">
-    <h2><a href="https://itunes.apple.com/us/app/quick-cinema/id1328563114?mt=12">Quick Cinema</a></h2>
+    <h2><a href="#quick-cinema">Quick Cinema</a></h2>
 
-    <p>Quick Cinema is a lean macOS full-screen video player specifically designed for theatrical cinema presentations and film festivals.</p>
+    <p class="intro"><em><b>Quick Cinema is a powerful lean full-screen video player specifically designed for theatrical cinema presentations and film festivals and engineered specifically to take advantage of macOS.</b></em></p>
 
     <dl>
       <dt>Dedicated Full-Screen Presentation</dt>
@@ -82,21 +114,51 @@
       <dt>Dedicated Audio Output Selection</dt>
       <dd>Any audio output device supported by macOS can be used for your show, even if it isn't the same device as the video is being output to.  Stereo can be output via the headphone jack or most USB audio devices, and HDMI audio extractors such as the <a target="_blank" href="https://www.amazon.com/gp/product/B002BBAA4C/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002BBAA4C&linkCode=as2&tag=amalgamatedcc-20&linkId=a0aa6f2c5fdaf774e67ca500d77d8efc">Atlona AT-HD570 HDMI Audio De-Embedder</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=amalgamatedcc-20&l=am2&o=1&a=B002BBAA4C" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /> or <a target="_blank" href="https://www.amazon.com/gp/product/B01B5FR722/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01B5FR722&linkCode=as2&tag=amalgamatedcc-20&linkId=b5d19be06b09018bb52c822c2abaa427">Monoprice Blackbird 7.1 HDMI Audio Extractor</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=amalgamatedcc-20&l=am2&o=1&a=B01B5FR722" width="1" height="1" alt="" style="border:none !important; margin:0px !important;"> can be used to get multi-channel output via HDMI.</dd>
 
+      <dt>Low System Requirements</dt>
+      <dd>Because Quick Cinema leverages video and audio playback built into macOS and optimized for Macintosh hardware, even hardware several years old can playback high quality formats with ease.</dd>
+
     </dl>
 
-    <a href="https://itunes.apple.com/us/app/quick-cinema/id1328563114?mt=12">Purchase Quick Cinema on the macOS App Store</a>
+    <p><a href="https://itunes.apple.com/us/app/quick-cinema/id1328563114?mt=12">Purchase Quick Cinema on the macOS App Store</a></p>
   </section>
 
-  <p>We're working around the clock to bring the rest of our divisions online.  Please check back soon.</p>
+  <section class="product" id="laurel-track">
+    <h2><a href="#laurel-track">Laurel Track</a></h2>
+
+    <p class="intro"><em><b>Laurel Track is a film festival submissions management and judging platform with advanced import, rating, and selection tools.</b></em></p>
+
+    <dl>
+      <dt>Advanced Import</dt>
+      <dd>Laurel Track doesn't accept submissions directly, but it has intelligent importing from 6 of the most popular submissions engines with more on the way.</dd>
+      <!-- <dd>Submissions Engine &rarr; Import into Laurel Track &rarr; Assign to Judges</dd> -->
+
+      <dt>Multiple Custom Judging Forms</dt>
+      <dd>Create as many completely forms for your screeners and judges to rate your submissions as you like.</dd>
+
+      <dt>Advanced Judging Assignments</dt>
+      <dd>
+        <p>No more assigning films to judges one at a time and hoping they watch the films.</p>
+        <ul>
+          <li>Easily assign lists of films to groups of judges.</li>
+          <li>Support for due dates to prioritize films to judge and make it clear when they need to be watched.</li>
+          <li>Allows for "sets of eyes" assignments so you can have scenarios such as "once a film has been rated 5 times unassign from the rest".</li>
+        </ul>
+      </dd>
+
+      <p>Interested in a demo or pricing? <a href="mailto:info@amalgamated.cc">info@amalgamated.cc</a> or <a href="tel:424-262-5266">(424) AMAL-CON</a></p>
+
+    </dl>
+  </section>
+
 </main>
 
 <footer>
   <hr>
-  <p style="float: right;">Premium, hand-crafted hypertext and compiled software products.</p>
+  <p style="float: right;">Yes this website is terrible.  We spend all our time on our products.</p>
 
-  <p style="float: left;">Contact our World Wide Web department at <a href="mailto:webmaster@amalgamated.cc">webmaster@amalgamated.cc</a> or <a href="tel:424-262-5266">(424) AMAL-CON</a>.</p>
+  <p style="float: left;">Contact us at <a href="mailto:info@amalgamated.cc">info@amalgamated.cc</a> or <a href="tel:424-262-5266">(424) AMAL-CON</a>.</p>
 
-  <p style="clear: both;"><i>macOS and Quicktime are trademarks of Apple.</i></p>
+  <p style="clear: both;"><i>macOS, Macintosh, and Quicktime are trademarks of Apple.</i></p>
 </footer>
 
 </body>
